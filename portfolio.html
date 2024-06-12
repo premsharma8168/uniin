@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prem Narayan Sharma - AI Developer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        *{
+            --color-sh: #0000ff;
+        }
+        body {
+            font-family: jokerman;
+            /* background-image: url('https://source.unsplash.com/1600x900/?code,technology'); */
+            /* background-size: cover;
+            background-position: center;
+            background-attachment: fixed; */
+            background: black;
+            height: 100vh;
+            color: white;
+            display: flex;
+            text-shadow: 0px 0px 20px rgb(239, 217, 155);
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .container {
+            max-width: 800px;
+            transform: translate(0, 3%);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-shadow: 0px 0px 10px rgb(255, 0, 0);
+            animation: fade-in 1s ease-in-out;
+        }
+        h2 {
+            font-weight: bold;
+            margin-top: 2rem;
+            text-shadow: 0px 0px 10px rgb(255, 0, 0);
+            animation: slide-in-left 1s ease-in-out;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            animation: slide-in-right 1s ease-in-out;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            animation: bounce 1s ease-in-out infinite;
+        }
+        .social-icons a {
+            color: #333;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            font-size: 3rem;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #79ff82;
+        }
+        
+        /* Animations */
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        @keyframes slide-in-left {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes slide-in-right {
+            0% { transform: translateX(100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 767px) {
+            .container {
+                max-width: 90%;
+            }
+        }
+        
+        /* Colorful Changing Border */
+        .section-container {
+            box-shadow: 0px 0px 3rem #ff0000;
+            padding: 1rem;
+            border-radius: 10px;    
+            animation: changingBorder .2s infinite linear; 
+        }
+        
+        @keyframes changingBorder {
+            0% { box-shadow: 1000px 0px 50px #ff000080; } /* Red */
+            25% { box-shadow: 0px 1000px 50px #00ff0080; } /* Green */
+            50% { box-shadow: -1000px 0px 50px #0000ff80; } /* Blue */
+            75% { box-shadow:  0px -1000px 50px #ff00ff80; } /* Magenta */
+            100% { box-shadow: 0px  1000px 50px #ff000080; } /* Red */
+        }
+        
+        /* Navigation Bar */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.761);
+            box-shadow: -1px 0px 30px inset rgb(13, 255, 0);
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 50px;
+            color: #ff0000 !important;
+            text-shadow: 0px 0px 20px red;
+        }
+        .nav-link {
+            color: #ff0000;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #007bff;
+        }
+
+        .header:hover, .footer:hover {
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .row{
+            margin-top: 1em;
+            border-radius: 10px;        
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        </style>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon btn-success"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container mt-3">
+        <!-- Header -->
+        <div class="row">
+            <div class="col-md-12 section-container">
+                <h1>Prem Narayan Sharma</h1>
+                <p>AI Developer | Passionate about Building Intelligent Systems</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 section-container">
+                <h2>About Me</h2>
+                <p>I am an AI Developer with a BTech degree in AI/ML from GLA University. I started my engineering in 2023 and have been actively pursuing my passion for artificial intelligence and machine learning ever since.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 section-container">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Python:</strong> OOP, GUI (Tkinter), and basic modules</li>
+                    <li><strong>Java</strong></li>
+                    <li><strong>Data Structures and Algorithms</strong></li>
+                    <li><strong>IoT:</strong> Sketch, Embedded C</li>
+                    <li><strong>Data Science:</strong> NumPy, Pandas, Matplotlib</li>
+                    <li><strong>Full Stack Web Development:</strong> HTML, CSS, JavaScript, React.js, Git, GitHub, Bootstrap, Docker</li>
+                    <li><strong>Databases:</strong> SQL, MongoDB</li>
+                    <li><strong>Back-end:</strong> PHP, Node.js, Express.js</li>
+                    <li><strong>Operating Systems:</strong> Windows, Linux, iOS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 section-container">
+                <h2>Experience</h2>
+                <ul>
+                    <li>
+                        <h3>AI Intern at XYZ Company</h3>
+                        <p>June 2022 - August 2022</p>
+                        <p>Developed a machine learning model for image classification using TensorFlow and Python. Achieved an accuracy of 92% on the test dataset.</p>
+                    </li>
+                    <li>
+                        <h3>Web Developer Intern at ABC Company</h3>
+                        <p>May 2021 - July 2021</p>
+                        <p>Worked on an e-commerce website using React.js, Node.js, and MongoDB. Implemented features like product catalog, shopping cart, and checkout process.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 section-container">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <h3>BTech in AI/ML</h3>
+                        <p>GLA University, Mathura</p>
+                        <p>2023 - 2027</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 section-container">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <h3>Face Recognition System</h3>
+                        <p>Built a face recognition system using OpenCV and Python. Implemented features like face detection, face recognition, and attendance tracking.</p>
+                    </li>
+                    <li>
+                        <h3>Chatbot</h3>
+                        <p>Developed a chatbot using natural language processing techniques and deep learning models. Trained the chatbot on various datasets to enable contextual conversation.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 section-container">
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-12 section-container">
+            <p>&copy; 2023 Prem Narayan Sharma. All rights reserved.</p>
+            </div>
+            </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIIN - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPxeijpnxpDvcUEYjM1bVIyzehAq+L4nRhXTbkFWHTMFHNv/QcWrVI+qqWOds+pkxuFcNthyAlfWsQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://source.unsplash.com/random/1920x1080/?professional');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            padding-top: 80px;
+            padding-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .hero {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 100px 50px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e6b800;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .feature {
+            max-width: 300px;
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .feature i {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 16px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="animate__animated animate__fadeInDown">
+        <h1>UNIIN</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero animate__animated animate__fadeInUp">
+            <h1>Unleash Your Potential</h1>
+            <p>Discover innovative solutions to drive your business forward.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature animate__animated animate__fadeInLeft">
+                <i class="fas fa-chart-line"></i>
+                <h3>Strategic Consulting</h3>
+                <p>Our experts provide strategic guidance to help you achieve your business goals.</p>
+            </div>
+            <div class="feature animate__animated animate__fadeInUp">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Financial Advisory</h3>
+                <p>Leverage our financial expertise to optimize your resources and maximize growth.</p>
+            </div>
+            <div class="feature animate__animated animate__fadeInRight">
+                <i class="fas fa-code"></i>
+                <h3>Technology Solutions</h3>
+                <p>Stay ahead of the curve with cutting-edge technology solutions tailored to your needs.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content animate__animated animate__fadeInUp">
+            <h2>About Us</h2>
+            <p>At UNIIN, our mission is to empower businesses and individuals to achieve their goals through our expertise and commitment to excellence. With a team of highly skilled professionals and a client-centric approach, we strive to deliver tailored solutions that drive success.</p>
+            <p>Our core values are integrity, innovation, and excellence. We believe in building long-term relationships with our clients based on trust and transparency.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="content animate__animated animate__fadeInUp">
+            <h2>Our Services</h2>
+            <ul>
+                <li><i class="fas fa-check"></i> Consulting</li>
+                <li><i class="fas fa-check"></i> Financial Advisory</li>
+                <li><i class="fas fa-check"></i> Legal Services</li>
+                <li><i class="fas fa-check"></i> Technology Solutions</li>
+                <li><i class="fas fa-check"></i> Human Resources</li>
+            </ul>
+            <p>Our team of experts is dedicated to providing comprehensive solutions tailored to your specific needs.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content animate__animated animate__fadeInUp">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="submit.php" method="post">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="animate__animated animate__fadeInUp">
+        <p>&copy; 2024 UNIIN. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script>
+        // JavaScript for animation
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".animate__animated").forEach(function(element) {
+                element.classList.add("animate__animated");
+            });
+        });
+
+        // JavaScript for form submission and Excel export
+        const form = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+
+        form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    formMessage.textContent = 'Sending message...';
+
+    const formData = new FormData(form);
+    const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        message: formData.get('message')
+    };
+
+    const worksheet = XLSX.utils.json_to_sheet([data]);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Contact Information');
+
+    const excelFile = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
+    const dataUri = 'data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,' + btoa(excelFile.join(''));
+
+    const downloadLink = document.createElement('a');
+    downloadLink.href = dataUri;
+    downloadLink.download = 'contact_information.xlsx';
+    downloadLink.click();
+
+    formMessage.textContent = 'Message sent successfully!';
+    form.reset();
+});
+    </script>
+</body>
+</html>
